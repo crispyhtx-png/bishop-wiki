@@ -1,0 +1,58 @@
+export const campaignData = [
+  {
+    title: 'The Diagnosis — Free AI Visibility Scan',
+    hero: 'When AI answers a question in your industry, whose name comes up?',
+    cta: 'Get your free AI visibility scan',
+    why: 'Low barrier, immediate value, positions Bishop as diagnostic not salesy. Best first campaign to run.',
+    priority: 1,
+  },
+  {
+    title: 'Wrong Board — The AEO Switch Campaign',
+    hero: "Your SEO is working perfectly. On a board nobody's playing on anymore.",
+    cta: 'See where you actually rank',
+    why: 'Reframes the game entirely without attacking past decisions.',
+    priority: 2,
+  },
+  {
+    title: 'One Move — The Competitor Gap Campaign',
+    hero: "Your competitor made one move you didn't see. We know exactly what it was.",
+    cta: 'Show me the move',
+    why: "Specific, data-backed, uses real analysis as the hook. Highest conversion potential.",
+    priority: 1,
+  },
+  {
+    title: 'Checkers Agencies — Direct Positioning',
+    hero: "Your agency is playing checkers. That's not their fault. It's what they were built to do.",
+    cta: 'Book a strategy session',
+    why: 'Reframes frustration away from the agency toward the model. Bold brand awareness play.',
+    priority: 2,
+  },
+  {
+    title: 'The Compounding System — Retention Campaign',
+    hero: "Most marketing stops working the moment you stop paying. Ours gets smarter.",
+    cta: 'See how the system compounds',
+    why: 'Speaks to fear about marketing spend. Best for retention and referral campaigns.',
+    priority: 3,
+  },
+  {
+    title: 'Rook AI — Product Launch',
+    hero: "Rook AI doesn't guess. It calculates.",
+    cta: 'See what Rook sees',
+    why: 'Creates a tangible differentiator. Run when Rook AI is ready to position publicly.',
+    priority: 3,
+  },
+  {
+    title: 'Six Moves Ahead — Thought Leadership Series',
+    hero: 'We publish what we see. Most agencies protect it.',
+    cta: 'Read the intel',
+    why: 'Builds authority over time. AEO-friendly. Compounds. Best long-term play.',
+    priority: 1,
+  },
+  {
+    title: 'Stop Gambling on Growth — ROI Campaign',
+    hero: "You've paid for marketing. You haven't paid for growth. There's a difference.",
+    cta: 'See what growth infrastructure costs',
+    why: 'Addresses scar tissue from past agency spend. High emotional resonance.',
+    priority: 2,
+  },
+];

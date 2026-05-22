@@ -1,0 +1,137 @@
+.pageTitle {
+  font-family: 'Lora', serif;
+  font-size: 22px;
+  color: var(--text);
+  margin-bottom: 16px;
+}
+
+.filterRow {
+  display: flex;
+  gap: 8px;
+  margin-bottom: 16px;
+}
+
+.filterBtn {
+  background: var(--bg-card);
+  border: 1px solid var(--border-md);
+  border-radius: var(--r-pill);
+  color: var(--text-dim);
+  font-family: 'Inter', sans-serif;
+  font-size: 13px;
+  padding: 7px 16px;
+  min-height: 36px;
+  transition: all 0.15s;
+}
+
+.filterBtn.active {
+  background: var(--orange-dim);
+  border-color: var(--orange);
+  color: var(--orange);
+}
+
+.card {
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: var(--r-card);
+  padding: 16px;
+  margin-bottom: 10px;
+  transition: border-color 0.2s;
+}
+
+.card.flash { border-color: var(--orange); }
+
+.cardTop {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 10px;
+  margin-bottom: 10px;
+}
+
+.cardTitle {
+  font-family: 'Lora', serif;
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--text);
+  line-height: 1.4;
+  flex: 1;
+}
+
+.badge {
+  font-size: 9px;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  padding: 3px 8px;
+  border-radius: var(--r-pill);
+  border: 1px solid currentColor;
+  flex-shrink: 0;
+}
+
+.high { color: var(--orange); }
+.med { color: #8ab4f8; }
+.low { color: var(--text-dim); }
+
+.hero {
+  font-family: 'Lora', serif;
+  font-style: italic;
+  font-size: 13.5px;
+  color: var(--text);
+  line-height: 1.6;
+  margin-bottom: 10px;
+  padding: 10px 12px;
+  background: var(--bg-lift);
+  border-radius: 8px;
+  border-left: 2px solid var(--orange);
+}
+
+.ctaRow {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 8px;
+}
+
+.ctaLabel {
+  font-size: 9px;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--orange);
+  background: var(--orange-dim);
+  border-radius: 4px;
+  padding: 2px 6px;
+}
+
+.ctaText {
+  font-size: 13px;
+  color: var(--text);
+}
+
+.why {
+  font-size: 12.5px;
+  color: var(--text-dim);
+  line-height: 1.55;
+  margin-bottom: 12px;
+}
+
+.copyBtn {
+  display: inline-flex;
+  align-items: center;
+  background: var(--bg-lift);
+  border: 1px solid var(--border-md);
+  border-radius: var(--r-pill);
+  color: var(--text-dim);
+  font-family: 'Inter', sans-serif;
+  font-size: 12px;
+  font-weight: 500;
+  padding: 7px 16px;
+  min-height: 32px;
+  transition: all 0.15s;
+}
+
+.copyBtn.done {
+  background: var(--orange-dim);
+  border-color: var(--orange);
+  color: var(--orange);
+}

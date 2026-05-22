@@ -1,0 +1,40 @@
+.wrap {
+  display: flex;
+  align-items: baseline;
+  gap: 10px;
+  margin: 24px 0 12px;
+}
+
+.wrap:first-child {
+  margin-top: 0;
+}
+
+.title {
+  font-family: 'Lora', serif;
+  font-size: 17px;
+  font-weight: 600;
+  color: var(--text);
+}
+
+.sub {
+  font-size: 12px;
+  color: var(--text-dim);
+  flex: 1;
+}
+
+.tier {
+  font-size: 9px;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  padding: 3px 7px;
+  border-radius: var(--r-pill);
+  border: 1px solid currentColor;
+}
+
+.primary { color: #f0a060; }
+.aeo { color: #8ab4f8; }
+.services { color: #81c995; }
+.competitive { color: #f28b82; }
+.local { color: var(--text-dim); }
+.longtail { color: var(--text-dim); }
+.brand { color: var(--text-dim); }

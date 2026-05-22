@@ -1,0 +1,9 @@
+.app {
+  min-height: 100dvh;
+  background: var(--bg);
+  position: relative;
+}
+
+.pageWrap {
+  will-change: opacity, transform;
+}

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head><title>Generate Bishop Icons</title></head>
+<body>
+<p>Right-click each canvas and "Save Image As" to the public/icons folder.</p>
+<canvas id="c192" width="192" height="192"></canvas>
+<canvas id="c512" width="512" height="512"></canvas>
+<script>
+function drawBishop(canvas) {
+  const size = canvas.width;
+  const ctx = canvas.getContext('2d');
+  const s = size / 192;
+  const cx = size / 2, cy = size / 2;
+
+  ctx.fillStyle = '#0a0a0a';
+  ctx.fillRect(0, 0, size, size);
+  ctx.fillStyle = '#F07B00';
+
+  ctx.beginPath();
+  ctx.arc(cx, cy - 55*s, 18*s, 0, Math.PI*2);
+  ctx.fill();
+
+  ctx.beginPath();
+  ctx.arc(cx, cy - 30*s, 5*s, 0, Math.PI*2);
+  ctx.fillStyle = '#0a0a0a';
+  ctx.fill();
+  ctx.fillStyle = '#F07B00';
+
+  ctx.beginPath();
+  ctx.moveTo(cx - 30*s, cy + 40*s);
+  ctx.quadraticCurveTo(cx - 35*s, cy - 10*s, cx, cy - 35*s);
+  ctx.quadraticCurveTo(cx + 35*s, cy - 10*s, cx + 30*s, cy + 40*s);
+  ctx.closePath();
+  ctx.fill();
+
+  ctx.beginPath();
+  ctx.roundRect(cx - 40*s, cy + 40*s, 80*s, 16*s, 6*s);
+  ctx.fill();
+}
+drawBishop(document.getElementById('c192'));
+drawBishop(document.getElementById('c512'));
+</script>
+</body>
+</html>

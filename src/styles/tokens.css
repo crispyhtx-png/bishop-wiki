@@ -1,0 +1,20 @@
+:root {
+  --bg: #0a0a0a;
+  --bg-card: #111111;
+  --bg-lift: #181818;
+  --bg-high: #222222;
+  --orange: #F07B00;
+  --orange-dim: rgba(240,123,0,0.12);
+  --orange-glow: rgba(240,123,0,0.22);
+  --text: #f0f0f0;
+  --text-dim: #7a7a7a;
+  --text-muted: #3a3a3a;
+  --border: rgba(255,255,255,0.07);
+  --border-md: rgba(255,255,255,0.13);
+  --r-card: 12px;
+  --r-pill: 100px;
+  --safe-top: env(safe-area-inset-top, 0px);
+  --safe-bottom: env(safe-area-inset-bottom, 0px);
+  --safe-left: env(safe-area-inset-left, 0px);
+  --safe-right: env(safe-area-inset-right, 0px);
+}
