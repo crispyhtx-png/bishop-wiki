@@ -1,0 +1,1 @@
+if('serviceWorker' in navigator) {window.addEventListener('load', () => {navigator.serviceWorker.register('/bishop-wiki/sw.js', { scope: '/bishop-wiki/' })})}
