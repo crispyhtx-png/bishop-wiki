@@ -1,6 +1,32 @@
+.pageHeader {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
 .pageTitle {
   font-family: 'Lora', serif;
   font-size: 22px;
   color: var(--text);
-  margin-bottom: 20px;
+  margin-bottom: 0;
+}
+
+.selectToggle {
+  background: var(--bg-lift);
+  border: 1px solid var(--border-md);
+  border-radius: var(--r-pill);
+  color: var(--text-dim);
+  font-family: 'Inter', sans-serif;
+  font-size: 13px;
+  font-weight: 500;
+  padding: 7px 16px;
+  min-height: 34px;
+  transition: all 0.15s;
+}
+
+.selectToggle.selectActive {
+  background: var(--orange-dim);
+  border-color: var(--orange);
+  color: var(--orange);
 }

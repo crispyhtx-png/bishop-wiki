@@ -4,10 +4,51 @@
   border-radius: var(--r-card);
   padding: 14px 14px 12px;
   margin-bottom: 10px;
-  transition: border-color 0.2s ease;
+  transition: border-color 0.2s ease, background 0.15s ease;
 }
 
 .card.flash {
+  border-color: var(--orange);
+}
+
+.card.selectable {
+  cursor: pointer;
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+.card.selected {
+  border-color: var(--orange);
+  background: var(--orange-dim);
+}
+
+.cardInner {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+}
+
+.cardBody {
+  flex: 1;
+  min-width: 0;
+}
+
+.checkbox {
+  flex-shrink: 0;
+  width: 22px;
+  height: 22px;
+  border-radius: 50%;
+  border: 1.5px solid var(--border-md);
+  background: var(--bg-lift);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 2px;
+  transition: all 0.15s ease;
+}
+
+.checkboxChecked {
+  background: var(--orange);
   border-color: var(--orange);
 }
 
