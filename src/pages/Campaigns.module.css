@@ -69,7 +69,7 @@
 }
 
 .high { color: var(--orange); }
-.med { color: #8ab4f8; }
+.med { color: #1d4ed8; }
 .low { color: var(--text-dim); }
 
 .hero {

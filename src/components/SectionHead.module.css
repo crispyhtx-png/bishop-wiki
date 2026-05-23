@@ -31,10 +31,10 @@
   border: 1px solid currentColor;
 }
 
-.primary { color: #f0a060; }
-.aeo { color: #8ab4f8; }
-.services { color: #81c995; }
-.competitive { color: #f28b82; }
+.primary { color: #b85e00; }
+.aeo { color: #1d4ed8; }
+.services { color: #15803d; }
+.competitive { color: #b91c1c; }
 .local { color: var(--text-dim); }
 .longtail { color: var(--text-dim); }
 .brand { color: var(--text-dim); }

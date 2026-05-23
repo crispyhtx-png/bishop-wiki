@@ -173,8 +173,8 @@
   margin-bottom: 8px;
 }
 
-.voiceCol:first-child .voiceHead { color: #81c995; }
-.voiceCol:last-child .voiceHead { color: #f28b82; }
+.voiceCol:first-child .voiceHead { color: #15803d; }
+.voiceCol:last-child .voiceHead { color: #b91c1c; }
 
 .voiceItem {
   font-size: 12px;

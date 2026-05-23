@@ -5,7 +5,7 @@
   right: 0;
   display: flex;
   align-items: stretch;
-  background: rgba(10, 10, 10, 0.92);
+  background: rgba(247, 245, 242, 0.94);
   backdrop-filter: blur(20px);
   -webkit-backdrop-filter: blur(20px);
   border-top: 1px solid var(--border);
@@ -24,7 +24,7 @@
   background: none;
   border: none;
   padding: 6px 2px;
-  color: rgba(240, 240, 240, 0.4);
+  color: rgba(20, 20, 20, 0.35);
   transition: color 0.15s ease;
   min-height: 56px;
 }
