@@ -1,20 +1,49 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@200;300;400;500;600;700;800;900&family=Lexend+Giga:wght@100..900&display=swap');
+
 :root {
-  --bg: #f7f5f2;
+  /* Surfaces */
+  --bg: #f5f5f7;
   --bg-card: #ffffff;
-  --bg-lift: #f0ede8;
-  --bg-high: #e6e2db;
-  --orange: #D96E00;
-  --orange-dim: rgba(217,110,0,0.10);
-  --orange-glow: rgba(217,110,0,0.20);
-  --text: #141414;
-  --text-dim: #636363;
-  --text-muted: #b0aba4;
-  --border: rgba(0,0,0,0.08);
-  --border-md: rgba(0,0,0,0.14);
-  --r-card: 12px;
-  --r-pill: 100px;
+  --bg-lift: rgba(255, 255, 255, 0.80);
+  --bg-high: rgba(255, 255, 255, 0.70);
+
+  /* Accent */
+  --orange: #ff8200;
+  --orange-warm: #ffb300;
+  --orange-dim: rgba(255, 130, 0, 0.10);
+  --orange-glow: rgba(255, 130, 0, 0.20);
+  --orange-border: rgba(255, 130, 0, 0.50);
+
+  /* Ink */
+  --text: #171717;
+  --text-dim: #8A8078;
+  --text-muted: #b8b1aa;
+
+  /* Structure */
+  --border: rgba(0, 0, 0, 0.10);
+  --border-md: rgba(0, 0, 0, 0.18);
+  --r-card: 16px;
+  --r-pill: 999px;
+
+  /* Safe areas */
   --safe-top: env(safe-area-inset-top, 0px);
   --safe-bottom: env(safe-area-inset-bottom, 0px);
   --safe-left: env(safe-area-inset-left, 0px);
   --safe-right: env(safe-area-inset-right, 0px);
+
+  /* Shadow & glow */
+  --shadow-glass: 0 10px 20px rgba(0,0,0,0.05), 0 0 20px rgba(255,255,255,0.60);
+  --shadow-card:  0 20px 40px rgba(0,0,0,0.10), 0 0 30px rgba(255,255,255,0.50);
+  --glow-soft:    0 0 20px rgba(255,130,0,0.35);
+  --glow-medium:  0 4px 15px rgba(255,165,0,0.50), 0 10px 20px rgba(0,0,0,0.10);
+
+  /* Motion */
+  --ease: cubic-bezier(0.22, 1, 0.36, 1);
+  --dur: 300ms;
+  --dur-fast: 180ms;
+
+  /* Typography */
+  --font-display: 'Lexend Giga', 'Helvetica Neue', system-ui, sans-serif;
+  --font-body:    'Kanit', 'Helvetica Neue', system-ui, sans-serif;
+  --font-mono:    'JetBrains Mono', 'SF Mono', ui-monospace, monospace;
 }

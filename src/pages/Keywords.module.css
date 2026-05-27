@@ -1,24 +1,9 @@
 .pageTitle {
-  font-family: 'Lora', serif;
-  font-size: 22px;
+  font-family: var(--font-display);
+  font-size: 20px;
+  font-weight: 700;
+  letter-spacing: -0.02em;
+  text-transform: uppercase;
   color: var(--text);
-  margin-bottom: 4px;
-}
-
-.hint {
-  font-size: 12px;
-  color: var(--text-dim);
   margin-bottom: 16px;
-}
-
-.pillWrap {
-  display: flex;
-  flex-wrap: wrap;
-}
-
-.empty {
-  text-align: center;
-  color: var(--text-dim);
-  font-size: 14px;
-  padding: 40px 0;
 }

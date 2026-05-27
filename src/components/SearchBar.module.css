@@ -5,7 +5,14 @@
   background: var(--bg-card);
   border: 1px solid var(--border-md);
   border-radius: var(--r-card);
+  box-shadow: var(--shadow-glass);
   margin-bottom: 16px;
+  transition: border-color var(--dur-fast) var(--ease), box-shadow var(--dur-fast) var(--ease);
+}
+
+.wrap:focus-within {
+  border-color: var(--orange-border);
+  box-shadow: var(--glow-soft);
 }
 
 .icon {
@@ -22,7 +29,7 @@
   border: none;
   outline: none;
   color: var(--text);
-  font-family: 'Inter', sans-serif;
+  font-family: var(--font-body);
   font-size: 15px;
   padding: 12px 40px 12px 38px;
   -webkit-appearance: none;
@@ -39,7 +46,7 @@
 .clear {
   position: absolute;
   right: 10px;
-  background: var(--bg-high);
+  background: rgba(0,0,0,0.06);
   border: none;
   color: var(--text-dim);
   width: 20px;

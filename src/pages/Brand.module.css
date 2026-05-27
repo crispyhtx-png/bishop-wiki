@@ -1,6 +1,9 @@
 .pageTitle {
-  font-family: 'Lora', serif;
-  font-size: 22px;
+  font-family: var(--font-display);
+  font-size: 20px;
+  font-weight: 700;
+  letter-spacing: -0.02em;
+  text-transform: uppercase;
   color: var(--text);
   margin-bottom: 20px;
 }
@@ -21,16 +24,19 @@
   flex-direction: column;
   align-items: center;
   gap: 3px;
+  box-shadow: var(--shadow-glass);
 }
 
 .statVal {
-  font-family: 'Lora', serif;
-  font-size: 16px;
-  font-weight: 600;
+  font-family: var(--font-display);
+  font-size: 14px;
+  font-weight: 700;
   color: var(--orange);
+  text-shadow: 0 0 12px rgba(255,130,0,0.35);
 }
 
 .statLabel {
+  font-family: var(--font-body);
   font-size: 9px;
   color: var(--text-dim);
   text-align: center;
@@ -43,10 +49,11 @@
   border-radius: var(--r-card);
   padding: 14px;
   margin-bottom: 8px;
+  box-shadow: var(--shadow-glass);
 }
 
 .posCore {
-  font-family: 'Lora', serif;
+  font-family: var(--font-body);
   font-style: italic;
   font-size: 14px;
   color: var(--text);
@@ -55,15 +62,17 @@
 
 .posLabel {
   display: block;
-  font-size: 10px;
-  font-weight: 600;
-  letter-spacing: 0.07em;
+  font-family: var(--font-display);
+  font-size: 9px;
+  font-weight: 700;
+  letter-spacing: 0.12em;
   text-transform: uppercase;
   color: var(--text-dim);
   margin-bottom: 6px;
 }
 
 .posText {
+  font-family: var(--font-body);
   font-size: 13.5px;
   color: var(--text);
   line-height: 1.6;
@@ -78,12 +87,13 @@
   display: flex;
   gap: 14px;
   align-items: flex-start;
+  box-shadow: var(--shadow-glass);
 }
 
 .methodNum {
-  font-family: 'Lora', serif;
-  font-size: 22px;
-  font-weight: 600;
+  font-family: var(--font-display);
+  font-size: 20px;
+  font-weight: 700;
   color: var(--text-muted);
   line-height: 1;
   flex-shrink: 0;
@@ -102,18 +112,23 @@
 }
 
 .methodTitle {
-  font-weight: 600;
-  font-size: 15px;
+  font-family: var(--font-display);
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
   color: var(--orange);
 }
 
 .methodSub {
+  font-family: var(--font-body);
   font-size: 11px;
   color: var(--text-dim);
   font-style: italic;
 }
 
 .methodDesc {
+  font-family: var(--font-body);
   font-size: 13px;
   color: var(--text-dim);
   line-height: 1.5;
@@ -139,14 +154,15 @@
   border: 1px solid var(--border-md);
   border-radius: var(--r-pill);
   color: var(--text-dim);
+  font-family: var(--font-body);
   font-size: 11.5px;
   padding: 5px 11px;
   margin: 3px 4px 3px 0;
 }
 
 .tagOrange {
-  border-color: rgba(240, 123, 0, 0.3);
-  color: #f0a060;
+  border-color: rgba(255, 130, 0, 0.35);
+  color: var(--orange);
   background: var(--orange-dim);
 }
 
@@ -162,21 +178,24 @@
   border: 1px solid var(--border);
   border-radius: var(--r-card);
   padding: 12px;
+  box-shadow: var(--shadow-glass);
 }
 
 .voiceHead {
   display: block;
-  font-size: 10px;
+  font-family: var(--font-display);
+  font-size: 9px;
   font-weight: 700;
-  letter-spacing: 0.08em;
+  letter-spacing: 0.12em;
   text-transform: uppercase;
   margin-bottom: 8px;
 }
 
 .voiceCol:first-child .voiceHead { color: #15803d; }
-.voiceCol:last-child .voiceHead { color: #b91c1c; }
+.voiceCol:last-child .voiceHead  { color: #b91c1c; }
 
 .voiceItem {
+  font-family: var(--font-body);
   font-size: 12px;
   line-height: 1.5;
   padding: 5px 0;
@@ -185,7 +204,7 @@
 
 .voiceItem:last-child { border-bottom: none; }
 
-.voiceDo { color: var(--text); }
+.voiceDo   { color: var(--text); }
 .voiceDont { color: var(--text-dim); }
 
 .colorRow {
@@ -206,16 +225,18 @@
   width: 52px;
   height: 52px;
   border-radius: 10px;
+  box-shadow: var(--shadow-glass);
 }
 
 .swatchName {
+  font-family: var(--font-body);
   font-size: 10px;
   color: var(--text-dim);
   text-align: center;
 }
 
 .swatchHex {
+  font-family: var(--font-mono);
   font-size: 9px;
   color: var(--text-muted);
-  font-family: monospace;
 }
