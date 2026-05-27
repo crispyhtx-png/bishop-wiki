@@ -1,6 +1,9 @@
 .pageTitle {
-  font-family: 'Lora', serif;
-  font-size: 22px;
+  font-family: var(--font-display);
+  font-size: 20px;
+  font-weight: 700;
+  letter-spacing: -0.02em;
+  text-transform: uppercase;
   color: var(--text);
   margin-bottom: 16px;
 }
@@ -16,17 +19,18 @@
   border: 1px solid var(--border-md);
   border-radius: var(--r-pill);
   color: var(--text-dim);
-  font-family: 'Inter', sans-serif;
+  font-family: var(--font-body);
   font-size: 13px;
   padding: 7px 16px;
   min-height: 36px;
-  transition: all 0.15s;
+  transition: all var(--dur-fast) var(--ease);
 }
 
 .filterBtn.active {
   background: var(--orange-dim);
   border-color: var(--orange);
   color: var(--orange);
+  box-shadow: var(--glow-soft);
 }
 
 .card {
@@ -35,10 +39,14 @@
   border-radius: var(--r-card);
   padding: 16px;
   margin-bottom: 10px;
-  transition: border-color 0.2s;
+  box-shadow: var(--shadow-glass);
+  transition: border-color var(--dur-fast) var(--ease), box-shadow var(--dur-fast) var(--ease);
 }
 
-.card.flash { border-color: var(--orange); }
+.card.flash {
+  border-color: var(--orange);
+  box-shadow: var(--glow-soft);
+}
 
 .cardTop {
   display: flex;
@@ -49,18 +57,21 @@
 }
 
 .cardTitle {
-  font-family: 'Lora', serif;
-  font-size: 14px;
-  font-weight: 600;
+  font-family: var(--font-display);
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: -0.01em;
+  text-transform: uppercase;
   color: var(--text);
-  line-height: 1.4;
+  line-height: 1.3;
   flex: 1;
 }
 
 .badge {
-  font-size: 9px;
+  font-family: var(--font-display);
+  font-size: 8px;
   font-weight: 700;
-  letter-spacing: 0.08em;
+  letter-spacing: 0.1em;
   text-transform: uppercase;
   padding: 3px 8px;
   border-radius: var(--r-pill);
@@ -69,18 +80,18 @@
 }
 
 .high { color: var(--orange); }
-.med { color: #1d4ed8; }
-.low { color: var(--text-dim); }
+.med  { color: #1d4ed8; }
+.low  { color: var(--text-dim); }
 
 .hero {
-  font-family: 'Lora', serif;
+  font-family: var(--font-body);
   font-style: italic;
   font-size: 13.5px;
   color: var(--text);
   line-height: 1.6;
   margin-bottom: 10px;
   padding: 10px 12px;
-  background: var(--bg-lift);
+  background: var(--orange-dim);
   border-radius: 8px;
   border-left: 2px solid var(--orange);
 }
@@ -93,9 +104,10 @@
 }
 
 .ctaLabel {
-  font-size: 9px;
+  font-family: var(--font-display);
+  font-size: 8px;
   font-weight: 700;
-  letter-spacing: 0.1em;
+  letter-spacing: 0.12em;
   text-transform: uppercase;
   color: var(--orange);
   background: var(--orange-dim);
@@ -104,11 +116,13 @@
 }
 
 .ctaText {
+  font-family: var(--font-body);
   font-size: 13px;
   color: var(--text);
 }
 
 .why {
+  font-family: var(--font-body);
   font-size: 12.5px;
   color: var(--text-dim);
   line-height: 1.55;
@@ -118,20 +132,23 @@
 .copyBtn {
   display: inline-flex;
   align-items: center;
-  background: var(--bg-lift);
+  background: rgba(0,0,0,0.04);
   border: 1px solid var(--border-md);
   border-radius: var(--r-pill);
   color: var(--text-dim);
-  font-family: 'Inter', sans-serif;
-  font-size: 12px;
-  font-weight: 500;
+  font-family: var(--font-display);
+  font-size: 9px;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
   padding: 7px 16px;
   min-height: 32px;
-  transition: all 0.15s;
+  transition: all var(--dur-fast) var(--ease);
 }
 
 .copyBtn.done {
   background: var(--orange-dim);
   border-color: var(--orange);
   color: var(--orange);
+  box-shadow: var(--glow-soft);
 }
